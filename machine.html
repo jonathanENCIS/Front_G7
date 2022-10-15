@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/funcionesMachine.js"></script>  
+
+    </head>
+    <body>
+        <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="categoria.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Categoria</a>
+
+              <a href="machine.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Herramientas</a>
+
+              <a href="cliente.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Clientes</a>
+
+              <a href="mensajes.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Mensajes</a>
+
+              <a href="reservaciones.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Reservaciones</a>
+            
+              <a href="reportes.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Reportes</a>
+           
+            </div>
+        <h1>Maquina</h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="categoria.html">Categoria</a></li>
+            <li><a href="cliente.html">Clientes</a></li>
+            <li><a href="mensajes.html">Mensajes</a></li>
+            <li><a href="reservaciones.html">Reservaciones</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+        
+
+        <script type="text/javascript">
+            window.onload = getMachine();
+        </script>
+
+        <script type="text/javascript">
+            window.onload = getCategoria_Machine();
+        </script>
+
+        <div id="resultadoMachine"></div>
+
+        <input type="text" id="name" placeholder="nombre" >
+        <input type="text" id="brand" placeholder="marca" >
+        <input type="number" id="year" placeholder="año" >
+        <input type="text" id="description" placeholder="descripción" >
+        
+        <select id="select-categoria"></select>
+
+        <button onclick="postMachine()">
+            Crear Herramientas
+        </button>
+    </body>
+
+</html>
